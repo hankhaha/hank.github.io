@@ -64,4 +64,17 @@ jQuery(document).ready(function( $ ) {
 		var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
 	}
 
+  if($('#canvas3').length) {
+      var doughnutData = [{
+              value: 55,
+              color: "#3bc492"
+          },
+          {
+              value: 40,
+              color: "#ecf0f1"
+          }
+      ];
+      var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+  }
+
 });
